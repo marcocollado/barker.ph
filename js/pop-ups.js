@@ -76,7 +76,7 @@ function loadPopupAbout(){
                 function loadPopupHelp(){
                     if(popupHelpStatus==0){
                         $("#popupHelp").fadeIn("slow");popupHelpStatus=1}}
-                function disablePopupContact(){
+                function disablePopupHelp(){
                     if(popupHelpStatus==1){$("#popupHelp").fadeOut("slow");popupHelpStatus=0}}
                     function centerPopupHelp(){
                         var a=document.documentElement.clientWidth;
