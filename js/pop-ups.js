@@ -72,26 +72,4 @@ function loadPopupAbout(){
                     $(function(){$("#popupContact").jScrollPane();
                     $(".popupContact").jScrollPane({showArrows:true,horizontalGutter:10})});
 
-                    var popupHelpStatus=0;
-                function loadPopupHelp(){
-                    if(popupHelpStatus==0){
-                        $("#popupHelp").fadeIn("slow");popupHelpStatus=1}}
-                function disablePopupHelp(){
-                    if(popupHelpStatus==1){$("#popupHelp").fadeOut("slow");popupHelpStatus=0}}
-                    function centerPopupHelp(){
-                        var a=document.documentElement.clientWidth;
-                var d=document.documentElement.clientHeight;
-                var c=$("#popupHelp").height();
-                var b=$("#popupHelp").width();
-                $("#popupHelp").css({position:"absolute",top:d/2-c/2,left:a/2-b/2})}
-                $(document).ready(function(){
-                    $("#popupHelp").fadeOut();popupHelpStatus=0;
-                    $("#help").click(function(){$("#popupHelp").css({visibility:"visible"});
-                    disablePopupAbout();
-                    disablePopupProjects();
-                    disablePopupContact();
-                    centerPopupHelp();
-                    loadPopupHelp()});
-                    $("#popupHelpClose").click(function(){disablePopupHelp()})});
-                    $(function(){$("#popupHelp").jScrollPane();
-                    $(".popupHelp").jScrollPane({showArrows:true,horizontalGutter:10})});
+        
