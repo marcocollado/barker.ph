@@ -6,56 +6,124 @@
 <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
 </head>
 <body>
-<
+ 
 <div data-role="page" id="pageone">
-  <div data-role="header">
-    <h1>Welcome To Barker.ph</h1>
-      <div data-role="navbar">
-       <ul>
-        <li><a href="#pagetwo" data-icon="home" data-role="button" data-rel="dialog">About Barker.ph</a></li>
-        <li><a href="#pagethree" data-icon="arrow-r" data-role="button" data-rel="dialog">Help a Friend</a></li>
-        <li><a href="#pagefour" data-icon="arrow-r" data-role="button" data-rel="dialog">Find a Way</a></li>
-        <li><a href="#pagefive" data-icon="arrow-r"data-role="button" data-rel="dialog">Contacts</a></li>
-        <li><a href="#pagefive" data-icon="search">Search</a></li>
-       </ul>
+        <div data-role="header">
+            <a href="#" data-icon="home" data-role="button">Home</a>
+                 <h1>Welcome To My Homepage</h1>
+            <a href="#" data-icon="search" data-role="button">Search</a>
+        </div>
+     <div data-role="content">
+         <div data-role="navbar">
+             <ul>
+                <li> <a href="#home" class="ui-btn-active ui-state-persist" data-role="button" data-inline="true" data-rel="dialog" data-icon="home">About Barker.ph</a></li>
+                <li> <a href="#register" class="ui-btn-active ui-state-persist" data-role="button" data-inline="true" data-rel="dialog" data-icon="arrow-r">Register</a></li>
+                <li> <a href="#helpafriend" class="ui-btn-active ui-state-persist" data-role="button" data-inline="true" data-rel="dialog" data-icon="arrow-r">Help A Friend</a></li>
+                <li> <a href="#search" class="ui-btn-active ui-state-persist" data-role="button" data-inline="true" data-rel="dialog" data-icon="arrow-r">Find a Way</a></li>
+                <li> <a href="#search" class="ui-btn-active ui-state-persist" data-role="button" data-inline="true" data-rel="dialog" data-icon="arrow-r">Contacts</a></li>
+            </ul>
+         </div>
       </div>
-  </div>
-    <img src="f.jpg"></img>
-    <div data-role="footer">
-      <h1>Barker.ph</h1>
-    </div>
-</div>
+<img src="f.jpg"/>
+     <div data-role="footer">
+        <h1>Footer Text</h1>
+     </div>
+</div> 
 
 <div data-role="page" id="pagetwo">
   <div data-role="header">
-    <h1>About Barker.ph</h1>
+  <h1>Buttons With Icons</h1>
   </div>
-
   <div data-role="content">
-    <p>In Metro Manila, millions of people use public transportation like MRT/LRT, jeepneys, buses, taxis and tricycles to travel daily to work, school and some other places.<br></br> <img src="test2.jpg" Align="center"></img><br></br>
-            
-       Many commuters got confused especially those who are not familiar with the place. Barker.ph is a website that will provide crowdsourced travel directions and mapping to all commuters. This is provides commuting guides and accessible information for commuters to reach places within and outside of Metro Manila and address other prevalent issues with commuting.This online commute portal will serve as a huge source of easily accessible information for commuters regarding public transportation and cost. This web portal will also provide a detailed commuting guides and step by step procedures of reaching places within and outside Metro Manila. Furthermore, this will be an efficient means of communication for all commuters as they will be able to know on what route to take, how much the fare is and what mode of transportation to ride.<br></br> 
+    <a href="#pageone" data-role="button" data-icon="back" data-inline="true">Go Back</a>
+    <a href="#pageone" data-role="button" data-icon="arrow-l">Previous Page</a>
+    <a href="#info" data-role="button" data-rel="dialog" data-icon="info" data-iconpos="top">Information</a>
+  </div>
  
-       This online portal will definitely address rampant issues pertaining to public transportation support system. Moreover, this will give an opportunity to acquaint oneself with commuter’s information.Additionally, the web portal will include features like providing information by allowing them to share events in real-time, give guides and instructions to reach specific locations, and share comments and suggestions like sending alerts and warnings about what’s happening in a specific locality, tweeting about traffic and other public transportation issues.</p><a href="#pageone">Back to Home</a>
-  </div>
-
   <div data-role="footer">
-    <h1>Barker.ph</h1>
+  <h1>Footer Text</h1>
   </div>
-
-<div data-role="page" id="pagethree">
+</div> 
+ 
+<div data-role="page" id="home">
   <div data-role="header">
-    <h1>Help a Friend</h1>
+  <h1>Home</h1>
   </div>
-
+ 
   <div data-role="content">
-    <p>text</p>
-    <a href="#pageone">Go to Page One</a>
-  </div>
+  <p align="justify">In Metro Manila, millions of people use public transportation like MRT/LRT, jeepneys, buses, taxis and tricycles to travel daily to work, school and some other places.<br></br> <div align="center"><img src="test2.jpg"></img></div>
+            
+   <p align="justify">Many commuters got confused especially those who are not familiar with the place. Barker.ph is a website that will provide crowdsourced travel directions and mapping to all commuters. This is provides commuting guides and accessible information for commuters to reach places within and outside of Metro Manila and address other prevalent issues with commuting.This online commute portal will serve as a huge source of easily accessible information for commuters regarding public transportation and cost. This web portal will also provide a detailed commuting guides and step by step procedures of reaching places within and outside Metro Manila. Furthermore, this will be an efficient means of communication for all commuters as they will be able to know on what route to take, how much the fare is and what mode of transportation to ride.<br></br> 
+ 
+       This online portal will definitely address rampant issues pertaining to public transportation support system. Moreover, this will give an opportunity to acquaint oneself with commuter&#39 s information.Additionally, the web portal will include features like providing information by allowing them to share events in real-time, give guides and instructions to reach specific locations, and share comments and suggestions like sending alerts and warnings about what&#39 s happening in a specific locality, tweeting about traffic and other public transportation issues.</p>
 
+  <a href="#pageone" data-role="button" data-inline="true" data-icon="back">Back to Home</a>
+  </div>
+ 
   <div data-role="footer">
-    <h1>Barker.ph</h1>
+  <h1>Barker.ph</h1>
   </div>
+</div> 
+ 
+<div data-role="page" id="register">
+  <div data-role="header">
+  <h1>Registration</h1>
+      <h1>Be a Member Now!</h1>
+  </div>
+  <div data-role="content">
+    <div data-role="content">
+    <form method="post" action="demoform.asp">
+      <div data-role="fieldcontain">
+        <label for="fullname">Full name:</label>
+        <input type="text" name="fullname" id="fullname" placeholder="Type your Name...">  
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username" placeholder="Type Username...">          
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password">
+        <label for="password">Verify Password:</label>
+        <input type="password" name="password" id="password">
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" id="email" placeholder="Your email..">
+      </div>
+      <input type="submit" data-inline="true" value="Submit">
+    </form>
+  </div>
+</div>
+  <a href="#pageone" data-role="button" data-inline="true" data-icon="back">Back to Home</a>
+  </div>
+</div> 
+ 
+<div data-role="page" id="helpafriend">
+  <div data-role="header">
+  <h1>Search</h1>
+  </div>
+ 
+  <div data-role="content">
+  <p>Nothing To Search Here!</p>
+  <a href="#pageone" data-role="button" data-inline="true" data-icon="back">Back to Home</a>
+  </div>
+ 
+  <div data-role="footer">
+  <h1>Footer Text</h1>
+  </div>
+</div> 
+ 
+<div data-role="page" id="info">
+  <div data-role="header">
+  <h1>Information</h1>
+  </div>
+ 
+  <div data-role="content">
+  <p>jQuery Mobile is FUN!</p>
+  </div>
+ 
+  <div data-role="footer">
+  <h1>Footer Text</h1>
+  </div>
+</div> 
+ 
 
+ 
 </body>
 </html>
+
