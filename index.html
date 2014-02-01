@@ -7,11 +7,11 @@
 </head>
 <body>
  
-
+ 
 <div data-role="page" id="pageone">
         <div data-role="header">
             <a href="#" data-icon="home" data-role="button">Home</a>
-                 <h1>Welcome To My Homepage</h1>
+                 <h1>Welcome To My Barker.ph Page</h1>
             <a href="#" data-icon="search" data-role="button">Search</a>
         </div>
        
@@ -21,8 +21,8 @@
                 <li> <a href="#home" class="ui-btn-active ui-state-persist" data-role="button" data-inline="true" data-rel="dialog" data-icon="home">About Barker.ph</a></li>
                 <li> <a href="#register" class="ui-btn-active ui-state-persist" data-role="button" data-transition="slide" data-inline="true" data-rel="dialog" data-icon="arrow-r">Register</a></li>
                 <li> <a href="#helpafriend" class="ui-btn-active ui-state-persist" data-role="button" data-transition="flow"" data-inline="true" data-rel="dialog" data-icon="arrow-r">Help A Friend</a></li>
-                <li> <a href="#search" class="ui-btn-active ui-state-persist" data-role="button" data-transition="slide" data-inline="true" data-rel="dialog" data-icon="arrow-r">Find a Way</a></li>
-                <li> <a href="#search" class="ui-btn-active ui-state-persist" data-role="button" data-transition="slide" data-inline="true" data-rel="dialog" data-icon="arrow-r">Contacts</a></li>
+                <li> <a href="#findaway" class="ui-btn-active ui-state-persist" data-role="button" data-transition="slide" data-inline="true" data-rel="dialog" data-icon="arrow-r">Find a Way</a></li>
+                <li> <a href="#contacts" class="ui-btn-active ui-state-persist" data-role="button" data-transition="slide" data-inline="true" data-rel="dialog" data-icon="arrow-r">Contacts</a></li>
             </ul>
          </div>
       </div>
@@ -32,20 +32,6 @@
      </div>
 </div> 
  
-<div data-role="page" id="pagetwo">
-  <div data-role="header">
-  <h1>Buttons With Icons</h1>
-  </div>
-  <div data-role="content">
-    <a href="#pageone" data-role="button" data-icon="back" data-inline="true">Go Back</a>
-    <a href="#pageone" data-role="button" data-icon="arrow-l">Previous Page</a>
-    <a href="#info" data-role="button" data-rel="dialog" data-icon="info" data-iconpos="top">Information</a>
-  </div>
- 
-  <div data-role="footer">
-  <h1>Footer Text</h1>
-  </div>
-</div> 
  
 <div data-role="page" id="home">
   <div data-role="header">
@@ -107,8 +93,8 @@
   <h1>Help A Friend</h1>
   </div>
  
-  <div data-role="content">
-  <form method="post" action="demoform.asp">
+<div data-role="content">
+    <form method="post" action="demoform.asp">
       <div data-role="fieldcontain">
         <label for="startingpoint">Starting Point:</label>
         <input type="text" name="startingpoint" id="startingpoint" placeholder="From">  
@@ -116,34 +102,63 @@
         <input type="text" name="endingpoint" id="endingpoint" placeholder="To">   
          <div data-role="controlgroup" data-type="horizontal">
              <a href="#" data-icon="info" data-role="button">Get Route</a>
-             <a href="#" data-icon="info" data-role="button">Add New Route</a>
+             <a href="#" data-icon="plus" data-role="button">Add New Route</a>
          </div>
-       </div>
-    </form>       
+         <br></br><iframe width="42+Ave,+Sunnyvale,+California+94089&amp;z=14&amp;ll=37.416883,-122.026022&amp;output=embed"></iframe>5" height="300" class="map" src="http://maps.google.com/maps?hl=en&amp;q=701+first+ave+sunnyvale+ca&amp;ie=UTF8&amp;hq=&amp;hnear=701+1st
+          
+          <div id="social-network">
+              <a href="#" target="_blank"><img src="images/facebook.png" alt="Facebook" /></a> 
+              <a href="#" target="_blank"><img src="images/flickr.png" alt="Flicker" /></a> 
+              <a href="#" target="_blank"><img src="images/linkedin.png" alt="Linkedin" /></a> 
+              <a href="#" target="_blank"><img src="images/myspace.png" alt="Myspace" /></a> 
+              <a href="#" target="_blank"><img src="images/twitter.png" alt="Twitter" /></a> 
+           </div> 
+        <a href="#pageone" data-role="button" data-inline="true" data-icon="back">Back to Home</a>
     </div>
-      
-  <a href="#pageone" data-role="button" data-inline="true" data-icon="back">Back to Home</a>
-  </div>
+  </div> 
+</div>
  
-</div> 
- 
-<div data-role="page" id="info">
+<div data-role="page" id="findaway">
   <div data-role="header">
-  <h1>Information</h1>
+  <h1>Find a Way</h1>
   </div>
  
   <div data-role="content">
-  <p>jQuery Mobile is FUN!</p>
+   <label for="startingpoint">Starting Point:</label>
+        <input type="text" name="startingpoint" id="startingpoint" placeholder="From">  
+        <label for="endingpoint">Ending Point</label>
+        <input type="text" name="endingpoint" id="endingpoint" placeholder="To">
+      <a href="#" data-icon="star" data-role="button">Get Route</a>
+  <a href="#pageone" data-role="button" data-inline="true" data-icon="back">Back to Home</a>
+  </div>
+</div>
+ 
+<div data-role="page" id="contacts">
+  <div data-role="header">
+  <h1>Contacts</h1>
   </div>
  
-  <div data-role="footer">
-  <h1>Footer Text</h1>
+  <div data-role="content">
+   <form action="form.php" method="post">
+       <label for="name">Name:</label> 
+       <input type="text" name="name" id="name" required placeholder="Name" /> 
+       <label for="email">Email:</label> 
+       <input type="email" name="email" id="email" required placeholder="email@example.com" /> 
+       <label for="message">Message:</label> 
+       <textarea name="message" id="message" required></textarea> 
+       <input type="submit" value="Send Message" /> 
+   </form> 
+
+        <br></br><iframe width="42+Ave,+Sunnyvale,+California+94089&amp;z=14&amp;ll=37.416883,-122.026022&amp;output=embed"></iframe>5" height="300" class="map" src="http://maps.google.com/maps?hl=en&amp;q=701+first+ave+sunnyvale+ca&amp;ie=UTF8&amp;hq=&amp;hnear=701+1st
+      
   </div>
+</div>  
 </div> 
  
  
  
 </body>
 </html>
+ 
  
 
