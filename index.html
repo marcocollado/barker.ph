@@ -5,7 +5,9 @@
         <title>Barker.ph</title>
         <link rel="stylesheet" href="css/style.css" type="text/css" media="screen"/>
         <link rel="stylesheet" href="css/jquery.jscrollpane.css" type="text/css" media="all" />
- 
+        <link rel="stylesheet" href="css/themename/jquery-ui.custom.css" />
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery-ui.custom.min.js"></script>
       
         <!--[if IE]> 
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js">
@@ -18,28 +20,22 @@
         </script><script type="text/javascript" src="js/functions.js"></script><![endif]-->
     </head>
 <body>
-    
+
 <div id="main" class="main">
-    <img src="final1.jpg" alt="0" width="800" height="1000" class="preview"style="display:none;"/> 
+    <img src="f.jpg" alt="0" width="800" height="1000" class="preview"style="display:none;"/> 
     <section class="overlay"></section> 
     <div id="loading" class="loading">
     <span>Loading...</span>
-</div> 
+</div>
  
-<br></br><br></br><br></br>
- 
-<div align="center"style="color:#000">
-  <h1>Welcome to Barker.ph</h1>
- 
-</div> 
-			
+    
     <nav> 
+        <br></br><br></br><br></br>
         <ul id="menu" class="menu"> 
- 
-         <li> <a href="#" id="about"> 
+             <li> <a href="#" id="about"> 
              <img src="logo1.jpg" alt="0"/> 
              <span class="active"></span> <span class="wrap"> <span class="link">About</span> 
-             <span class="descr">Know me</span> </span> </a> </li> 
+             <span class="descr">Commuter Portal</span> </span> </a> </li> 
  
          <li> <a href="#" id="projects"> 
              <img src="pic1.jpg" alt="0"/> 
@@ -47,7 +43,7 @@
              <span class="descr">Discussions</span> </span> </a> </li> 
  
          <li> <a href="#" id="contact"> 
-             <img src="pic2.jpg" alt="0"/> 
+             <img src="picr3.jpg" alt="0"/> 
              <span class="active"></span> <span class="wrap"> <span class="link">Sign Up</span> 
              <span class="descr">Join Us</span> </span> </a> </li> 
  
@@ -62,13 +58,13 @@
              <span class="descr">Route</span> </span> </a> </li> 
  
          <li> <a href="#" id="test"> 
-             <img src="contact1.jpg" alt="0"/> 
-             <span class="active"></span> <span class="wrap"> <span class="link">Test</span> 
-             <span class="descr">Test</span> </span> </a> </li>    
+             <img src="cont1.jpg" alt="0"/> 
+             <span class="active"></span> <span class="wrap"> <span class="link">Contact</span> 
+             <span class="descr">Email</span> </span> </a> </li>    
         </ul> 
     </nav>
 </div> 
- 
+
 <article id="popupAbout" class="popupAbout"> 
     <a id="popupAboutClose">
         <img src="images/close.png" width="20" alt="0" /></a> 
@@ -94,7 +90,7 @@
 <article id="popupContact" class="popupContact"> 
     <a id="popupContactClose">
         <img src="images/close.png" width="20" alt="0" /></a> 
-         <h1>Registration</h1> <p></p> 
+         <h1>Registration</h1><p></p> 
             <form action="form.php" method="post"> 
               <label for="name">Username:</label>
               <input type="text" name="username" size ="15" id="username" required placeholder="Username" />  
@@ -125,9 +121,14 @@
     <script type="text/javascript" src="js/cufon.js"></script> 
     <script type="text/javascript" src="js/Quicksand_Book_400.font.js"></script> 
     <script type="text/javascript" src="js/functions.js"></script>
-   
+
+<article id="popupHelp" class="popupHelp"> <a id="popupHelpClose"><img src="images/close.png" width="20" alt="" /></a> <h1>Help</h1> <p></p> <form action="form.php" method="post"> <label for="starting point">Starting Point:</label><input type="text" name="starting point" id="starting point" required placeholder="Enter here" /> <label for="ending point">Ending Point:</label><input type="text" name="ending point" id="ending point" required placeholder="Enter here" /><input type="submit" value="Get Route" /></form> <iframe width="425" height="300" class="map" src="http://maps.google.com/maps?hl=en&amp;q=701+first+ave+sunnyvale+ca&amp;ie=UTF8&amp;hq=&amp;hnear=701+1st+Ave,+Sunnyvale,+California+94089&amp;z=14&amp;ll=37.416883,-122.026022&amp;output=embed"></iframe> <div id="social-network"> <a href="#" target="_blank"><img src="images/facebook.png" alt="Facebook" /></a> <a href="#" target="_blank"><img src="images/flickr.png" alt="Flicker" /></a> <a href="#" target="_blank"><img src="images/linkedin.png" alt="Linkedin" /></a> <a href="#" target="_blank"><img src="images/myspace.png" alt="Myspace" /></a> <a href="#" target="_blank"><img src="images/twitter.png" alt="Twitter" /></a> </div></article><script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> <script type="text/javascript" src="js/pop-ups.js"></script> <script type="text/javascript" src="js/jquery.easing.1.3.js"></script> <script type="text/javascript" src="js/jquery.mousewheel.js"></script> <script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script> <script type="text/javascript" src="js/cufon.js"></script> <script type="text/javascript" src="js/Quicksand_Book_400.font.js"></script> <script type="text/javascript" src="js/functions.js"></script>
+
+ 
     </body>
 </html>
+ 
+ 
  
  
  
