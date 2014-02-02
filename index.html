@@ -9,14 +9,23 @@
 <body>
  
 <div data-role="page" id="pageone" style="background-image: url('f.jpg')" data-theme="a">
-        <div data-role="header">
-            <a href="#home" data-icon="home" data-role="button" data-rel="dialog">Home</a>
-                 <h1>Welcome To Barker.ph </h1>
-            <a href="#search" data-icon="search" data-role="button">Search</a>
 
+        <div data-role="header">
+           <a href="#settings" data-icon="arrow-l" data-iconpos="left">Settings</a>
+                 <h1>Welcome To Barker.ph </h1>
+            <a href="#home" data-icon="home" data-role="button" data-rel="dialog">Home</a>
+            <a href="#search" data-icon="search" data-role="button">Search</a>
         </div>
-             
-     <div data-role="content" data-theme="a">
+
+        <div data-role="panel" id="settings" data-theme="a">
+
+        <div align="center"><h3>Settings</h3></div>
+        <p class=""></p>
+        <p><a data-rel="close" data-role="button" data-theme="a">Go Back</a></p>
+        </div>
+
+
+        <div data-role="content" data-theme="a">
           <div data-role="navbar">
              <ul>
                 <li> <a href="#about" class="ui-btn-active ui-state-persist" data-role="button" data-inline="true" data-rel="dialog" data-icon="about">About Barker.ph</a></li>
@@ -25,8 +34,8 @@
                 <li> <a href="#findaway" class="ui-btn-active ui-state-persist" data-role="button" data-transition="slide" data-inline="true" data-rel="dialog" data-icon="arrow-r">Find a Way</a></li>
                 <li> <a href="#contacts" class="ui-btn-active ui-state-persist" data-role="button" data-transition="slide" data-inline="true" data-rel="dialog" data-icon="arrow-r">Contacts</a></li>
             </ul>
+          </div>
          </div>
-     </div>
 
 <div data-role="content">  
     <ul data-role="listview" data-inset="true" data-theme="c">
@@ -61,7 +70,9 @@
     <a href="#" data-role="button" data-rel="back" data-inline="true" data-mini="true">Cancel</a>
   </div>
 </div> 
-
+        <footer data-role="footer">  
+            <h4> http://barkerph.azurewebsites.net/</h4>  
+        </footer>
 
  </div>
 <div data-role="page" id="about" data-theme="e">
