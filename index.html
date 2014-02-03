@@ -15,26 +15,34 @@
         <div data-role="header">
             <a href="#home" data-icon="home" data-role="button" data-rel="dialog">Home</a>
                  <h1>Welcome To Barker.ph </h1>
-            <a href="#options" data-icon="gear" data-role="button">Options</a>
- 
+            <a href="#options" data-icon="gear" data-role="button">Options</a> 
         </div>
              
-     <div data-role="content" data-theme="a">
-          <div data-role="navbar">
-             <ul>
-                <li> <a href="#about"  data-role="button" data-inline="true" data-rel="dialog" >About Barker.ph</a></li>
-                <li> <a href="#register" data-role="button" data-transition="slide" data-inline="true" data-rel="dialog" >Register</a></li>
-                <li> <a href="#helpafriend"  data-role="button" data-transition="flow" data-inline="true" data-rel="dialog" >Help A Friend</a></li>
-                <li> <a href="#findaway" data-role="button" data-transition="slide" data-inline="true" data-rel="dialog" >Find a Way</a></li>
-                <li> <a href="#contacts"  data-role="button" data-transition="slide" data-inline="true" data-rel="dialog" >Contacts</a></li>
-            </ul>
-         </div>
-     </div>
- 
-<div data-role="content">  
   
+ 
+<div data-role="content"> 
+        
+        <div class="searchbox" input style="width: 325px"> 
+             <form action="post" method="demoform.asp">   
+                 <div data-role="fieldcontain">  
+                <label for="search">Search: </label><input type="search" data-inset="true" name="search" id="search" x-webkit-speech class="sct" data-icon="search" placeholder="What are you looking for?" value="" />    
+             </form><div style="clear: both;"></div></div>
+       </div>    
+     
+             <ul data-role="listview" data-inset="true" input style="width: 350px;"data-theme="c">
+                 <li data-role="list-divider"> Overview</li>  
+
+                 <li><a href="#about"   data-inline="true" data-rel="dialog" >About Barker.ph</a> </li>
+                 <li><a href="#register"  data-transition="slide" data-inline="true" data-rel="dialog" >Register</a></li>
+                 <li><a href="#helpafriend"   data-transition="flow" data-inline="true" data-rel="dialog" >Help A Friend</a></li>
+                 <li><a href="#findaway"  data-transition="slide" data-inline="true" data-rel="dialog" >Find a Way</a></li>
+                 <li><a href="#contacts"   data-transition="slide" data-inline="true" data-rel="dialog" >Contacts</a></li>
+            </ul>
+    </div>
+<div data-role="content">
    
     <ul data-role="listview" data-inset="true" input style="width: 350px;"data-theme="c">
+
         <li data-role="list-divider"> EVENTS AND ACTIVITIES</li>   
       
         <li><a href="#checktest">     
@@ -72,8 +80,9 @@
         <li><a href="#checktest">  
         <h3 class="ui-li-heading">Find a Route</h3>  
         <p class="ui-li-desc">Get directions</p></a></li>           
-    </ul> 
- </div>       
+    </ul>
+      
+ </div>          
 </div>
 
 
