@@ -12,16 +12,15 @@
 <body>
  
 <div data-role="page" id="pageone" style="background-image: url('f.jpg')" data-theme="a">
-        <div data-role="header">
-            <a href="#home" data-icon="home" data-role="button" data-rel="dialog">Home</a>
-                 <h1>Welcome To Barker.ph </h1>
-            <a href="#options" data-icon="gear" data-role="button">Options</a> 
-        </div>
-             
-  
  
-<div data-role="content"> 
-        
+        <div data-role="header">
+            <a href="#home" data-icon="home" data-mini="true" data-role="button" >Home</a>
+                 <h1>Welcome To Barker.ph </h1>
+            <a href="#options" data-icon="gear"data-mini="true"  data-role="button">Options</a> 
+        </div>            
+ 
+<div data-role="content">
+ 
         <div class="searchbox" input style="width: 325px"> 
              <form action="post" method="demoform.asp">   
                  <div data-role="fieldcontain">  
@@ -31,18 +30,18 @@
      
              <ul data-role="listview" data-inset="true" input style="width: 350px;"data-theme="c">
                  <li data-role="list-divider"> Overview</li>  
-
-                 <li><a href="#about"   data-inline="true" data-rel="dialog" >About Barker.ph</a> </li>
+ 
+                 <li><a href="#about"   data-inline="true" data-rel="dialog" ></a> </li>
                  <li><a href="#register"  data-transition="slide" data-inline="true" data-rel="dialog" >Register</a></li>
                  <li><a href="#helpafriend"   data-transition="flow" data-inline="true" data-rel="dialog" >Help A Friend</a></li>
                  <li><a href="#findaway"  data-transition="slide" data-inline="true" data-rel="dialog" >Find a Way</a></li>
                  <li><a href="#contacts"   data-transition="slide" data-inline="true" data-rel="dialog" >Contacts</a></li>
             </ul>
     </div>
-<div data-role="content">
+<div data-role="content" >
    
     <ul data-role="listview" data-inset="true" input style="width: 350px;"data-theme="c">
-
+ 
         <li data-role="list-divider"> EVENTS AND ACTIVITIES</li>   
       
         <li><a href="#checktest">     
@@ -82,16 +81,17 @@
         <p class="ui-li-desc">Get directions</p></a></li>           
     </ul>
       
- </div>          
+ </div>             
+ 
 </div>
-
-
-<div data-role="page" id="about" data-theme="e">
+ 
+ 
+<div data-role="page" id="about" data-theme="e" >
   <div data-role="header">
   <h1>Home</h1>
   </div>
  
-  <div data-role="content">
+  <div data-role="content" >
   <p align="justify">In Metro Manila, millions of people use public transportation like MRT/LRT, jeepneys, buses, taxis and tricycles to travel daily to work, school and some other places.<br></br> <div align="center"><img src="test2.jpg" alt="0"></img></div>
             
    <p align="justify">Many commuters got confused especially those who are not familiar with the place. Barker.ph is a website that will provide crowdsourced travel directions and mapping to all commuters. This is provides commuting guides and accessible information for commuters to reach places within and outside of Metro Manila and address other prevalent issues with commuting.This online commute portal will serve as a huge source of easily accessible information for commuters regarding public transportation and cost. This web portal will also provide a detailed commuting guides and step by step procedures of reaching places within and outside Metro Manila. Furthermore, this will be an efficient means of communication for all commuters as they will be able to know on what route to take, how much the fare is and what mode of transportation to ride.<br></br></p> 
@@ -105,7 +105,7 @@
   <h1>Barker.ph</h1>
   </div>
 </div> 
-
+ 
  
 <div data-role="page" id="register" data-theme="e">
   <div data-role="header">
@@ -140,7 +140,7 @@
   </div>
   <a href="#pageone" data-role="button" data-inline="true" data-icon="back">Back to Home</a>
   </div>
-
+ 
  
 <div data-role="page" id="helpafriend" data-theme="e">
   <div data-role="header">
@@ -171,7 +171,7 @@
         <a href="#pageone" data-role="button" data-inline="true" data-icon="back">Back to Home</a>
     </div>
   </div> 
-
+ 
  
 <div data-role="page" id="findaway" data-theme="e">
   <div data-role="header">
@@ -188,7 +188,7 @@
   </div>
 </div>
  
-
+ 
 <div data-role="page" id="contacts" data-theme="e">
   <div data-role="header">
   <h1>Contact Us</h1>
@@ -216,10 +216,21 @@
       
   </div>
 </div>  
- 
+  <div data-role="content"> 
+        <div data-role="panel" id="leftpanel2" data-position="left" data-display="push" data-dismissible="true" data-theme="a" class="ui-panel ui-panel-position-left ui-panel-display-push ui-body-a ui-panel-animate ui-panel-open">
+			
+            <div class="ui-panel-inner"><h3>Left Panel: Push</h3><p>This panel is positioned on the left with the push display mode. The panel markup is <em>after</em> the header, content and footer in the source order.</p><p>To close, click off the panel, swipe left or right, hit the Esc key, or use the button below:</p><a href="#demo-links" data-rel="close" data-role="button" data-theme="a" data-icon="delete" data-inline="true" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" class="ui-btn ui-btn-up-a ui-shadow ui-btn-corner-all ui-btn-inline ui-btn-icon-left"><span class="ui-btn-inner"><span class="ui-btn-text">Close panel</span><span class="ui-icon ui-icon-delete ui-icon-shadow">&nbsp;</span></span></a></div>
+            
+            
+            
+			
+		</div>
        
 </body>
 </html>
+ 
+ 
+ 
  
  
  
