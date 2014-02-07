@@ -3,6 +3,13 @@
 		
 	<!-- Page Header -->
 	<head> 
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="WOW Slider, Gallery Plugin, Gallery Slider" />
+	<meta name="description" content="WOWSlider created with WOW Slider, a free wizard program that helps you easily generate beautiful web slideshow" />
+	<!-- Start WOWSlider.com HEAD section -->
+	<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+	<script type="text/javascript" src="engine1/jquery.js"></script>
+	<!-- End WOWSlider.com HEAD section -->
 	<link rel="Shortcut Icon" type="image/ico" href="logo1.jpg" />
 	<!-- Include PHP files-->
 		<!-- Page Meta Settings -->
@@ -136,6 +143,25 @@
 	<script type="text/javascript" src="http://use.typekit.com/sem5bqf.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
  -->
+
+            <style>
+    body {font-family:Arial, Helvetica, sans-serif; font-size:12px;}
+     
+    .fadein {
+    position:relative; height:332px; width:500px; margin:0 auto;
+    background: url("slideshow-bg.png") repeat-x scroll left top transparent;
+    padding: 10px;
+    }
+    .fadein img { position:absolute; left:10px; top:10px; }
+    </style>
+     
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script>
+    $(function(){
+    $('.fadein img:gt(0)').hide();
+    setInterval(function(){$('.fadein :first-child').fadeOut().next('img').fadeIn().end().appendTo('.fadein');}, 3000);
+    });
+    </script>
 	</head>
 
 	<body class="GuideBody">
@@ -170,6 +196,7 @@
 	<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
 	<script type="text/javascript">stLight.options({publisher: "ur-b3f08177-f6cd-45dc-6f54-2a9f51166f2"}); </script>
 
+
 	<div data-role='page' id='GuidePage' data-theme='d'><div data-role='header' data-theme='DarkBlue' ><div data-role='navbar' ><div style='width:100%;max-width:1000px;margin:0px auto;'><div style='float:right;'><div >
 			<div id='ShareThin' style='float:right;padding-top:6px;'>
 			<span class='st_sharethis_large' displayText='ShareThis'></span>
@@ -201,10 +228,10 @@
                             <li data-role='list-divider'>
                                 <span class='ListDividerText'>Overview</span></li>
                                      <li><a href="#about"   data-inline="true" >About Barker.ph</a> </li>
-                                     <li><a href="#register"  data-transition="slide" data-inline="true" data-rel="dialog" >Register</a></li>
-                                     <li><a href="#helpafriend"   data-transition="flow" data-inline="true" data-rel="dialog" >Help A Friend</a></li>
-                                     <li><a href="#findaway"  data-transition="slide" data-inline="true" data-rel="dialog" >Find a Way</a></li>
-                                     <li><a href="#contacts"   data-transition="slide" data-inline="true" data-rel="dialog" >Contacts</a></li>
+                                     <li><a href="#register"  data-transition="slide" data-inline="true"  >Register</a></li>
+                                     <li><a href="#helpafriend"   data-transition="flow" data-inline="true" >Help A Friend</a></li>
+                                     <li><a href="#findaway"  data-transition="slide" data-inline="true"  >Find a Way</a></li>
+                                     <li><a href="#contacts"   data-transition="slide" data-inline="true"  >Contacts</a></li>
                         </ul>
 
                         <ul data-role='listview'  data-theme='d'  data-inset='true'  data-dividertheme='DarkBlue'  >
@@ -256,10 +283,12 @@
                         <p>Learn how to create directions and find routes. </p>
                 </div>
                 </div>
-                    <div id='Mobile-View-Guide'>
-                        <a data-role='button' data-theme = Silver onclick='ShowGuideTableofContents()'>
-                            <strong>View Guide</strong></a>
-                    </div>
+                    <div class="fadein" align="center">
+                         <img src="logo1.jpg">
+                         <img src="1.jpg">
+                         <img src="4.jpg">
+                         <img src="3.jpg">
+    </div>
                 </div>
             </div>
             </div>
